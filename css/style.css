@@ -4,6 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body {
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
     color: aliceblue;
 }
@@ -18,6 +20,7 @@
 }
 .logo img {
     width: 100px;
+    margin-top: -30px;
 }
 .signs {
     display: flex;
@@ -32,6 +35,7 @@
     display: flex;
     align-items: center;
     gap: 20px;
+    margin-top: -5px;
 }
 #about {
     width: 100%;
@@ -69,12 +73,10 @@
 }
 .offer_title {
     color: black;
-    /* text-indent: 20px; */
     font-size: 40px;
     font-weight: 800;
 }
 .offer_text {
-    /* text-indent: 20px; */
     margin-top: 10px;
     color: gray;
     font-size: large;
@@ -90,6 +92,10 @@
 input {
     color: gray;
     outline: none;
+}
+.container3 {
+    display: flex;
+    gap: 20px;
 }
 .name,
 .Destination,
@@ -129,41 +135,146 @@ input {
     display: flex;
     flex-wrap: wrap;
 }
-.photo1 {
-    width: 900px;
-    height: 800px;
-    background-image: url(../images/jp.jpg);
-    background-size: cover;
-}
-
 #gallery2 {
     width: 1000px;
     height: 800px;
     display: flex;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     flex-wrap: wrap;
 }
-.photo2 {
+.photo1 img {
+    width: 900px;
+    height: 800px;
+    padding: 5px;
+    display: block;
+}
+.photo2 img {
     width: 500px;
     height: 400px;
-    background-image: url(../images/it.jpg);
-    background-size: cover;
+    padding: 5px;
+    display: block;
 }
-.photo3 {
+.photo3 img {
     width: 500px;
     height: 400px;
-    background-image: url(../images/gr.jpg);
-    background-size: cover;
+    padding: 5px;
+    display: block;
 }
-.photo4 {
+.photo4 img {
     width: 500px;
     height: 400px;
-    background-image: url(../images/fr.jpg);
-    background-size: cover;
+    padding: 5px;
+    display: block;
 }
+.photo5 img {
+    width: 500px;
+    height: 400px;
+    padding: 5px;
+    display: block;
+}
+.photo1,
+.photo2,
+.photo3,
+.photo4,
 .photo5 {
-    width: 500px;
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #00000050;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: 0.5s ease;
+}
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.photo1:hover .overlay {
+    bottom: 0;
+    height: 800px;
+    text-align: center;
+}
+.photo2:hover .overlay {
+    bottom: 0;
     height: 400px;
-    background-image: url(../images/usa.jpg);
-    background-size: cover;
+    text-align: center;
+}
+.photo3:hover .overlay {
+    bottom: 0;
+    height: 400px;
+    text-align: center;
+}
+.photo4:hover .overlay {
+    bottom: 0;
+    height: 400px;
+    text-align: center;
+}
+.photo5:hover .overlay {
+    bottom: 0;
+    height: 400px;
+    text-align: center;
+}
+#our_top {
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+}
+.container4 {
+    height: 500px;
+    width: 1200px;
+}
+.top_travel {
+    font-size: 35px;
+    font-weight: 900;
+    color: black;
+}
+.dummy {
+    font-size: large;
+    color: black;
+    margin-top: 10px;
+}
+.container_tt {
+    width: 1200px;
+    height: 550px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    gap: 20px;
+    margin-top: 25px;
+}
+.top1,
+.top2,
+.top3 {
+    width: 400px;
+    height: 500px;
+    border-radius: 15px;
+    background-color: rgba(237, 237, 237, 255);
+    display: flex;
+    justify-content: center;
+}
+.pl {
+    width: 300px;
+    height: 250px;
+    border-radius: 15px;
+}
+.sp {
+    width: 300px;
+    height: 250px;
+    border-radius: 15px;
+}
+.thailand {
+    width: 300px;
+    height: 250px;
+    border-radius: 15px;
 }
