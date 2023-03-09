@@ -4,15 +4,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body {
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
     color: aliceblue;
-    scroll-behavior: smooth;
 }
 #navbar {
     width: 100%;
-    height: 80px;
+    height: 10vh;
     background-image: url(../images/tlo.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -20,13 +20,17 @@ body {
     display: flex;
 }
 .logo img {
-    width: 100px;
+    width: 10vh;
     margin-top: -30px;
 }
 .signs {
     display: flex;
     gap: 50px;
     font-size: 21px;
+}
+.signs a {
+    text-decoration: none;
+    color: aliceblue;
 }
 .signs li {
     list-style: none;
@@ -38,9 +42,13 @@ body {
     gap: 20px;
     margin-top: -5px;
 }
+.number a {
+    text-decoration: none;
+    color: white;
+}
 #about {
     width: 100%;
-    height: 700px;
+    height: 80vh;
     background-image: url(../images/tlo.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -155,25 +163,21 @@ input {
     width: 500px;
     height: 400px;
     padding: 5px;
-    display: block;
 }
 .photo3 img {
     width: 500px;
     height: 400px;
     padding: 5px;
-    display: block;
 }
 .photo4 img {
     width: 500px;
     height: 400px;
     padding: 5px;
-    display: block;
 }
 .photo5 img {
     width: 500px;
     height: 400px;
     padding: 5px;
-    display: block;
 }
 .photo1,
 .photo2,
@@ -181,6 +185,8 @@ input {
 .photo4,
 .photo5 {
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
 }
 .overlay {
     position: absolute;
@@ -385,14 +391,12 @@ input {
 #our_team {
     width: 100%;
     height: 450px;
-    /* background-color: black; */
     display: flex;
     align-items: center;
 }
 .team {
     width: 100%;
     height: 400px;
-    /* background-color: blue; */
     display: flex;
     justify-content: center;
     gap: 50px;
@@ -441,4 +445,187 @@ input {
 .ceo {
     width: 200px;
     height: 300px;
+}
+.team1desc,
+.team2desc,
+.team3desc p {
+    color: black;
+}
+.jklinks,
+.hklinks,
+.jclinks {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+#contact_us {
+    width: 100%;
+    height: 300px;
+    background-color: rgb(116, 111, 111);
+}
+.contactcontainer {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+}
+.contact {
+    height: 100px;
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+}
+.contact a {
+    color: white;
+    text-decoration: none;
+}
+.contact p {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+.contact h1 {
+    color: black;
+}
+.category {
+    height: 100px;
+    width: 200px;
+    text-align: center;
+    padding: 20px;
+}
+.category h1 {
+    color: black;
+}
+.contactimg {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.category_signs {
+    list-style: none;
+}
+.category_signs a {
+    text-decoration: none;
+    font-size: large;
+    color: rgb(255, 255, 255);
+}
+a:hover {
+    transition: 0.4s;
+    color: green;
+}
+
+.author {
+    text-align: center;
+    margin-top: 15px;
+}
+@media (max-width: 768px) {
+    .signs {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-size: 30px;
+        margin-top: 1vh;
+    }
+    .number {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: -5vh;
+    }
+    .logo {
+        position: relative;
+        display: flex;
+        height: 25px;
+        width: 25px;
+        top: -10px;
+    }
+    #about {
+        height: 80vh;
+        width: auto;
+    }
+    .desc {
+        margin-top: 35vh;
+    }
+    .start {
+        position: relative;
+        top: 200px;
+        text-align: center;
+    }
+    .container {
+        width: 90%;
+        height: auto;
+    }
+    .offer_title {
+        font-size: 10vw;
+    }
+    .offer_text {
+        font-size: 3vw;
+    }
+    .photo1 img {
+        width: 90%;
+    }
+    .name,
+    .Destination,
+    .Activity,
+    .Duration,
+    .date,
+    .submit {
+        width: 90%;
+        height: 8vh;
+    }
+    #gallery {
+        height: 100%;
+    }
+    #gallery2 {
+        width: 100%;
+        height: auto;
+    }
+    .photo1 img {
+        width: 100%;
+        height: 100%;
+    }
+    .photo2 img,
+    .photo3 img,
+    .photo4 img,
+    .photo5 img {
+        width: 100%;
+        height: 100%;
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #00000050;
+        overflow: hidden;
+        opacity: 0;
+        transition: opacity 0.5s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .text {
+        color: white;
+        font-size: 15px;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .photo1:hover .overlay,
+    .photo2:hover .overlay,
+    .photo3:hover .overlay,
+    .photo4:hover .overlay,
+    .photo5:hover .overlay {
+        opacity: 1;
+        width: 100%;
+        height: 100%;
+    }
 }
